@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Add Soal&pembahasan</title>
+    <title>Add Soal</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- favicon
@@ -397,35 +397,6 @@
                 </div>
             </div>
             <!-- Mobile Menu end -->
-            <div class="breadcome-area">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                            <div class="breadcome-list">
-                                <div class="row">
-                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                                        <div class="breadcomb-wp">
-                                            <div class="breadcomb-icon">
-                                                <i class="icon nalika-home"></i>
-                                            </div>
-                                            <div class="breadcomb-ctn">
-                                                <h2>Selamat Datang Admin</h2>
-                                                <p>Welcome to Nalika <span class="bread-ntd">Admin Template</span></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                                        <div class="breadcomb-report">
-                                            <button data-toggle="tooltip" data-placement="left" title="Download Report"
-                                                class="btn"><i class="icon nalika-download"></i></button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
         <!-- Single pro tab start-->
         <div class="single-product-tab-area mg-b-30" style="margin-top: 10px;">
@@ -438,66 +409,959 @@
                                 <ul id="myTab3" class="tab-review-design">
                                     <li class="active">
                                         <a href="#description">
-                                            <i class="icon nalika-edit" aria-hidden="true"></i> Add soal & pembahasan
+                                            <i class="icon nalika-edit" aria-hidden="true"></i> Add soal
                                         </a>
                                     </li>
                                 </ul>
-                                <div id="myTabContent" class="tab-content custom-product-edit">
+                                <div id="myTabContent" class="tab-content custom-product-edit" style="color: #fff;">
                                     <div class="product-tab-list tab-pane fade active in" id="description">
-                                        <div class="row">
-                                            <div class="col-lg col-md col-sm col-xs">
+                                        <!-- TWK 30 soal -->
+                                        <div class="row" style="margin-bottom: 20px;">
+                                            <div class="col-lg col-md col-sm col-xs-12">
                                                 <div class="review-content-section">
-                                                    <div class="input-group mg-b-pro-edt">
-                                                        <span class="input-group-addon">
-                                                            <i class="icon nalika-user" aria-hidden="true"></i>
-                                                        </span>
-                                                        <input type="text" class="form-control" placeholder="Judul">
-                                                    </div>
+                                                    <label for="">Judul Pertanyaan</label>
                                                     <div class="input-group mg-b-pro-edt">
                                                         <span class="input-group-addon">
                                                             <i class="icon nalika-edit" aria-hidden="true"></i>
                                                         </span>
-                                                        <input type="text" class="form-control" placeholder="Your name">
+                                                        <input type="text" class="form-control" placeholder="Judul">
                                                     </div>
-                                                    <select name="select"
-                                                        class="form-control pro-edt-select form-control-primary"
-                                                        style="margin-bottom: 30px;">
-                                                        <option value="opt1">Mata Pelajaran</option>
-                                                        <option value="opt2">IPA</option>
-                                                        <option value="opt3">IPS</option>
-                                                        <option value="opt4">MTK</option>
-                                                        <option value="opt5">PKN</option>
-                                                        <option value="opt6">Bahasa</option>
-                                                    </select>
-                                                    <div class="input-group" style="color: #fff;">
-                                                        <div class="custom-file">
-                                                            <label class="custom-file-label"
-                                                                for="inputGroupFile04">Upload Soal</label>
-                                                            <input type="file" class="custom-file-input"
-                                                                id="inputGroupFile04"
-                                                                aria-describedby="inputGroupFileAddon04"
-                                                                style="text-align: right; margin-bottom: 15px;">
+                                                    <!-- tipe soal -->
+                                                    <div class="col-lg col-md col-sm col-xs"
+                                                        style="margin-bottom: 20px;">
+                                                        <label for="">Tipe Soal</label>
+                                                        <select name="select" class="form-control">
+                                                            <option value=" opt1">--pilih--</option>
+                                                            <option value="opt2">TWK</option>
+                                                            <option value="opt3">TIU</option>
+                                                            <option value="opt4">TKP</option>
+                                                        </select>
+                                                    </div>
+                                                    <!-- no. 1 -->
+                                                    <div class="row" style="margin-bottom: 100px;">
+                                                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                                                            <label for="">Id Soal</label>
+                                                            <div class="input-group mg-b-pro-edt">
+                                                                <input type="text" class="form-control"
+                                                                    placeholder="Id">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                                                            <label for="">bobot</label>
+                                                            <div class="input-group mg-b-pro-edt">
+                                                                <input type="text" class="form-control"
+                                                                    placeholder="contoh 2/soal">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                                                            <label for="">Timer</label>
+                                                            <div class="input-group mg-b-pro-edt">
+                                                                <input type="text" class="form-control"
+                                                                    placeholder="contoh 30">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                                                            <label for="">jmlh Soal</label>
+                                                            <div class="input-group mg-b-pro-edt">
+                                                                <input type="text" class="form-control"
+                                                                    placeholder="contoh 10">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xs-12 col-lg-6">
+                                                            <div class="col-lg-1">
+                                                                <label for="">1. </label>
+                                                            </div>
+                                                            <div class="col-lg-11">
+                                                                <div class="input-group mg-b-pro-edt">
+                                                                    <textarea class="form-control"
+                                                                        style="width: 480px; height: 300px;"></textarea>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-1">
+                                                                <label for=""> </label>
+                                                            </div>
+                                                            <div class="col-lg-11">
+                                                                <div class="input-group mg-b-pro-edt">
+                                                                    <div class="custom-file">
+                                                                        <label class="custom-file-label"
+                                                                            for="inputGroupFile04">Upload Images</label>
+                                                                        <input type="file" class="custom-file-input"
+                                                                            id="inputGroupFile04"
+                                                                            aria-describedby="inputGroupFileAddon04"
+                                                                            style="text-align: right; margin-bottom: 15px;">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- Jawaban A,B,C,D -->
+                                                        <!-- jawaban A -->
+                                                        <div class="col-xs-12 col-lg-6">
+                                                            <div class="input-group mg-b-pro-edt">
+                                                                <span class="input-group-addon">
+                                                                    A.
+                                                                </span>
+                                                                <input type="text" class="form-control">
+                                                            </div>
+                                                            <!-- Upload file -->
+                                                            <div class="col-lg-1">
+                                                                <label for=""></label>
+                                                            </div>
+                                                            <div class="col-lg-11">
+                                                                <div class="input-group mg-b-pro-edt">
+                                                                    <div class="custom-file">
+                                                                        <input type="file" class="custom-file-input"
+                                                                            id="inputGroupFile04"
+                                                                            aria-describedby="inputGroupFileAddon04"
+                                                                            style="text-align: right; margin-bottom: 15px;">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!-- jawaban B -->
+                                                            <div class="input-group mg-b-pro-edt">
+                                                                <span class="input-group-addon">
+                                                                    B.
+                                                                </span>
+                                                                <input type="text" class="form-control">
+                                                            </div>
+                                                            <!-- Upload file -->
+                                                            <div class="col-lg-1">
+                                                                <label for=""></label>
+                                                            </div>
+                                                            <div class="col-lg-11">
+                                                                <div class="input-group mg-b-pro-edt">
+                                                                    <div class="custom-file">
+                                                                        <input type="file" class="custom-file-input"
+                                                                            id="inputGroupFile04"
+                                                                            aria-describedby="inputGroupFileAddon04"
+                                                                            style="text-align: right; margin-bottom: 15px;">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!-- Jawaban C -->
+                                                            <div class="input-group mg-b-pro-edt">
+                                                                <span class="input-group-addon">
+                                                                    C.
+                                                                </span>
+                                                                <input type="text" class="form-control">
+                                                            </div>
+                                                            <!-- Upload file -->
+                                                            <div class="col-lg-1">
+                                                                <label for=""></label>
+                                                            </div>
+                                                            <div class="col-lg-11">
+                                                                <div class="input-group mg-b-pro-edt">
+                                                                    <div class="custom-file">
+                                                                        <input type="file" class="custom-file-input"
+                                                                            id="inputGroupFile04"
+                                                                            aria-describedby="inputGroupFileAddon04"
+                                                                            style="text-align: right; margin-bottom: 15px;">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!-- jawaban D -->
+                                                            <div class="input-group mg-b-pro-edt">
+                                                                <span class="input-group-addon">
+                                                                    D.
+                                                                </span>
+                                                                <input type="text" class="form-control">
+                                                            </div>
+                                                            <!-- Upload file -->
+                                                            <div class="col-lg-1">
+                                                                <label for=""></label>
+                                                            </div>
+                                                            <div class="col-lg-11">
+                                                                <div class="input-group mg-b-pro-edt">
+                                                                    <div class="custom-file">
+                                                                        <input type="file" class="custom-file-input"
+                                                                            id="inputGroupFile04"
+                                                                            aria-describedby="inputGroupFileAddon04"
+                                                                            style="text-align: right; margin-bottom: 15px;">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!-- kunci jawaban -->
+                                                            <div class="input-group mg-b-pro-edt">
+                                                                <span class="input-group-addon">
+                                                                    Kunci
+                                                                </span>
+                                                                <select name="select" class="form-control">
+                                                                    <option value=" opt1">--pilih--</option>
+                                                                    <option value="opt2">A</option>
+                                                                    <option value="opt3">B</option>
+                                                                    <option value="opt4">C</option>
+                                                                    <option value="opt5">D</option>
+                                                                </select>
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                    <div class="input-group" style="color: #fff;">
-                                                        <div class="custom-file">
-                                                            <label class="custom-file-label"
-                                                                for="inputGroupFile04">Upload pembahasan</label>
-                                                            <input type="file" class="custom-file-input"
-                                                                id="inputGroupFile04"
-                                                                aria-describedby="inputGroupFileAddon04"
-                                                                style="text-align: right; margin-bottom: 15px;">
+                                                    <!-- no. 2 -->
+                                                    <div class="row">
+                                                        <div class="col-xs-12 col-lg-6">
+                                                            <div class="col-lg-1">
+                                                                <label for="">2. </label>
+                                                            </div>
+                                                            <div class="col-lg-11">
+                                                                <div class="input-group mg-b-pro-edt">
+                                                                    <textarea class="form-control"
+                                                                        style="width: 480px; height: 300px;"></textarea>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-1">
+                                                                <label for=""> </label>
+                                                            </div>
+                                                            <div class="col-lg-11">
+                                                                <div class="input-group mg-b-pro-edt">
+                                                                    <div class="custom-file">
+                                                                        <label class="custom-file-label"
+                                                                            for="inputGroupFile04">Upload Images</label>
+                                                                        <input type="file" class="custom-file-input"
+                                                                            id="inputGroupFile04"
+                                                                            aria-describedby="inputGroupFileAddon04"
+                                                                            style="text-align: right; margin-bottom: 15px;">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- Jawaban A,B,C,D -->
+                                                        <!-- jawaban A -->
+                                                        <div class="col-xs-12 col-lg-6">
+                                                            <div class="input-group mg-b-pro-edt">
+                                                                <span class="input-group-addon">
+                                                                    A.
+                                                                </span>
+                                                                <input type="text" class="form-control">
+                                                            </div>
+                                                            <!-- Upload file -->
+                                                            <div class="col-lg-1">
+                                                                <label for=""></label>
+                                                            </div>
+                                                            <div class="col-lg-11">
+                                                                <div class="input-group mg-b-pro-edt">
+                                                                    <div class="custom-file">
+                                                                        <input type="file" class="custom-file-input"
+                                                                            id="inputGroupFile04"
+                                                                            aria-describedby="inputGroupFileAddon04"
+                                                                            style="text-align: right; margin-bottom: 15px;">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!-- jawaban B -->
+                                                            <div class="input-group mg-b-pro-edt">
+                                                                <span class="input-group-addon">
+                                                                    B.
+                                                                </span>
+                                                                <input type="text" class="form-control">
+                                                            </div>
+                                                            <!-- Upload file -->
+                                                            <div class="col-lg-1">
+                                                                <label for=""></label>
+                                                            </div>
+                                                            <div class="col-lg-11">
+                                                                <div class="input-group mg-b-pro-edt">
+                                                                    <div class="custom-file">
+                                                                        <input type="file" class="custom-file-input"
+                                                                            id="inputGroupFile04"
+                                                                            aria-describedby="inputGroupFileAddon04"
+                                                                            style="text-align: right; margin-bottom: 15px;">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!-- Jawaban C -->
+                                                            <div class="input-group mg-b-pro-edt">
+                                                                <span class="input-group-addon">
+                                                                    C.
+                                                                </span>
+                                                                <input type="text" class="form-control">
+                                                            </div>
+                                                            <!-- Upload file -->
+                                                            <div class="col-lg-1">
+                                                                <label for=""></label>
+                                                            </div>
+                                                            <div class="col-lg-11">
+                                                                <div class="input-group mg-b-pro-edt">
+                                                                    <div class="custom-file">
+                                                                        <input type="file" class="custom-file-input"
+                                                                            id="inputGroupFile04"
+                                                                            aria-describedby="inputGroupFileAddon04"
+                                                                            style="text-align: right; margin-bottom: 15px;">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!-- jawaban D -->
+                                                            <div class="input-group mg-b-pro-edt">
+                                                                <span class="input-group-addon">
+                                                                    D.
+                                                                </span>
+                                                                <input type="text" class="form-control">
+                                                            </div>
+                                                            <!-- Upload file -->
+                                                            <div class="col-lg-1">
+                                                                <label for=""></label>
+                                                            </div>
+                                                            <div class="col-lg-11">
+                                                                <div class="input-group mg-b-pro-edt">
+                                                                    <div class="custom-file">
+                                                                        <input type="file" class="custom-file-input"
+                                                                            id="inputGroupFile04"
+                                                                            aria-describedby="inputGroupFileAddon04"
+                                                                            style="text-align: right; margin-bottom: 15px;">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!-- kunci jawaban -->
+                                                            <div class="input-group mg-b-pro-edt">
+                                                                <span class="input-group-addon">
+                                                                    Kunci
+                                                                </span>
+                                                                <select name="select" class="form-control">
+                                                                    <option value=" opt1">--pilih--</option>
+                                                                    <option value="opt2">A</option>
+                                                                    <option value="opt3">B</option>
+                                                                    <option value="opt4">C</option>
+                                                                    <option value="opt5">D</option>
+                                                                </select>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
+                                        <!-- TIU 35 Soal -->
+                                        <div class="row" style="margin-bottom: 20px;">
+                                            <div class="col-lg col-md col-sm col-xs-12">
+                                                <div class="review-content-section">
+                                                    <!-- tipe soal -->
+                                                    <div class="col-lg col-md col-sm col-xs"
+                                                        style="margin-bottom: 20px;">
+                                                        <label for="">Tipe Soal</label>
+                                                        <select name="select" class="form-control">
+                                                            <option value=" opt1">--pilih--</option>
+                                                            <option value="opt2">TWK</option>
+                                                            <option value="opt3">TIU</option>
+                                                            <option value="opt4">TKP</option>
+                                                        </select>
+                                                    </div>
+                                                    <!-- no. 1 -->
+                                                    <div class="row" style="margin-bottom: 100px;">
+                                                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                                                            <label for="">Id Soal</label>
+                                                            <div class="input-group mg-b-pro-edt">
+                                                                <input type="text" class="form-control"
+                                                                    placeholder="Id">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                                                            <label for="">bobot</label>
+                                                            <div class="input-group mg-b-pro-edt">
+                                                                <input type="text" class="form-control"
+                                                                    placeholder="contoh 2/soal">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                                                            <label for="">Timer</label>
+                                                            <div class="input-group mg-b-pro-edt">
+                                                                <input type="text" class="form-control"
+                                                                    placeholder="contoh 30">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                                                            <label for="">jmlh Soal</label>
+                                                            <div class="input-group mg-b-pro-edt">
+                                                                <input type="text" class="form-control"
+                                                                    placeholder="contoh 10">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xs-12 col-lg-6">
+                                                            <div class="col-lg-1">
+                                                                <label for="">1. </label>
+                                                            </div>
+                                                            <div class="col-lg-11">
+                                                                <div class="input-group mg-b-pro-edt">
+                                                                    <textarea class="form-control"
+                                                                        style="width: 480px; height: 300px;"></textarea>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-1">
+                                                                <label for=""> </label>
+                                                            </div>
+                                                            <div class="col-lg-11">
+                                                                <div class="input-group mg-b-pro-edt">
+                                                                    <div class="custom-file">
+                                                                        <label class="custom-file-label"
+                                                                            for="inputGroupFile04">Upload Images</label>
+                                                                        <input type="file" class="custom-file-input"
+                                                                            id="inputGroupFile04"
+                                                                            aria-describedby="inputGroupFileAddon04"
+                                                                            style="text-align: right; margin-bottom: 15px;">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- Jawaban A,B,C,D -->
+                                                        <!-- jawaban A -->
+                                                        <div class="col-xs-12 col-lg-6">
+                                                            <div class="input-group mg-b-pro-edt">
+                                                                <span class="input-group-addon">
+                                                                    A.
+                                                                </span>
+                                                                <input type="text" class="form-control">
+                                                            </div>
+                                                            <!-- Upload file -->
+                                                            <div class="col-lg-1">
+                                                                <label for=""></label>
+                                                            </div>
+                                                            <div class="col-lg-11">
+                                                                <div class="input-group mg-b-pro-edt">
+                                                                    <div class="custom-file">
+                                                                        <input type="file" class="custom-file-input"
+                                                                            id="inputGroupFile04"
+                                                                            aria-describedby="inputGroupFileAddon04"
+                                                                            style="text-align: right; margin-bottom: 15px;">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!-- jawaban B -->
+                                                            <div class="input-group mg-b-pro-edt">
+                                                                <span class="input-group-addon">
+                                                                    B.
+                                                                </span>
+                                                                <input type="text" class="form-control">
+                                                            </div>
+                                                            <!-- Upload file -->
+                                                            <div class="col-lg-1">
+                                                                <label for=""></label>
+                                                            </div>
+                                                            <div class="col-lg-11">
+                                                                <div class="input-group mg-b-pro-edt">
+                                                                    <div class="custom-file">
+                                                                        <input type="file" class="custom-file-input"
+                                                                            id="inputGroupFile04"
+                                                                            aria-describedby="inputGroupFileAddon04"
+                                                                            style="text-align: right; margin-bottom: 15px;">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!-- Jawaban C -->
+                                                            <div class="input-group mg-b-pro-edt">
+                                                                <span class="input-group-addon">
+                                                                    C.
+                                                                </span>
+                                                                <input type="text" class="form-control">
+                                                            </div>
+                                                            <!-- Upload file -->
+                                                            <div class="col-lg-1">
+                                                                <label for=""></label>
+                                                            </div>
+                                                            <div class="col-lg-11">
+                                                                <div class="input-group mg-b-pro-edt">
+                                                                    <div class="custom-file">
+                                                                        <input type="file" class="custom-file-input"
+                                                                            id="inputGroupFile04"
+                                                                            aria-describedby="inputGroupFileAddon04"
+                                                                            style="text-align: right; margin-bottom: 15px;">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!-- jawaban D -->
+                                                            <div class="input-group mg-b-pro-edt">
+                                                                <span class="input-group-addon">
+                                                                    D.
+                                                                </span>
+                                                                <input type="text" class="form-control">
+                                                            </div>
+                                                            <!-- Upload file -->
+                                                            <div class="col-lg-1">
+                                                                <label for=""></label>
+                                                            </div>
+                                                            <div class="col-lg-11">
+                                                                <div class="input-group mg-b-pro-edt">
+                                                                    <div class="custom-file">
+                                                                        <input type="file" class="custom-file-input"
+                                                                            id="inputGroupFile04"
+                                                                            aria-describedby="inputGroupFileAddon04"
+                                                                            style="text-align: right; margin-bottom: 15px;">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!-- kunci jawaban -->
+                                                            <div class="input-group mg-b-pro-edt">
+                                                                <span class="input-group-addon">
+                                                                    Kunci
+                                                                </span>
+                                                                <select name="select" class="form-control">
+                                                                    <option value=" opt1">--pilih--</option>
+                                                                    <option value="opt2">A</option>
+                                                                    <option value="opt3">B</option>
+                                                                    <option value="opt4">C</option>
+                                                                    <option value="opt5">D</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- no. 2 -->
+                                                    <div class="row">
+                                                        <div class="col-xs-12 col-lg-6">
+                                                            <div class="col-lg-1">
+                                                                <label for="">2. </label>
+                                                            </div>
+                                                            <div class="col-lg-11">
+                                                                <div class="input-group mg-b-pro-edt">
+                                                                    <textarea class="form-control"
+                                                                        style="width: 480px; height: 300px;"></textarea>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-1">
+                                                                <label for=""> </label>
+                                                            </div>
+                                                            <div class="col-lg-11">
+                                                                <div class="input-group mg-b-pro-edt">
+                                                                    <div class="custom-file">
+                                                                        <label class="custom-file-label"
+                                                                            for="inputGroupFile04">Upload Images</label>
+                                                                        <input type="file" class="custom-file-input"
+                                                                            id="inputGroupFile04"
+                                                                            aria-describedby="inputGroupFileAddon04"
+                                                                            style="text-align: right; margin-bottom: 15px;">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- Jawaban A,B,C,D -->
+                                                        <!-- jawaban A -->
+                                                        <div class="col-xs-12 col-lg-6">
+                                                            <div class="input-group mg-b-pro-edt">
+                                                                <span class="input-group-addon">
+                                                                    A.
+                                                                </span>
+                                                                <input type="text" class="form-control">
+                                                            </div>
+                                                            <!-- Upload file -->
+                                                            <div class="col-lg-1">
+                                                                <label for=""></label>
+                                                            </div>
+                                                            <div class="col-lg-11">
+                                                                <div class="input-group mg-b-pro-edt">
+                                                                    <div class="custom-file">
+                                                                        <input type="file" class="custom-file-input"
+                                                                            id="inputGroupFile04"
+                                                                            aria-describedby="inputGroupFileAddon04"
+                                                                            style="text-align: right; margin-bottom: 15px;">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!-- jawaban B -->
+                                                            <div class="input-group mg-b-pro-edt">
+                                                                <span class="input-group-addon">
+                                                                    B.
+                                                                </span>
+                                                                <input type="text" class="form-control">
+                                                            </div>
+                                                            <!-- Upload file -->
+                                                            <div class="col-lg-1">
+                                                                <label for=""></label>
+                                                            </div>
+                                                            <div class="col-lg-11">
+                                                                <div class="input-group mg-b-pro-edt">
+                                                                    <div class="custom-file">
+                                                                        <input type="file" class="custom-file-input"
+                                                                            id="inputGroupFile04"
+                                                                            aria-describedby="inputGroupFileAddon04"
+                                                                            style="text-align: right; margin-bottom: 15px;">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!-- Jawaban C -->
+                                                            <div class="input-group mg-b-pro-edt">
+                                                                <span class="input-group-addon">
+                                                                    C.
+                                                                </span>
+                                                                <input type="text" class="form-control">
+                                                            </div>
+                                                            <!-- Upload file -->
+                                                            <div class="col-lg-1">
+                                                                <label for=""></label>
+                                                            </div>
+                                                            <div class="col-lg-11">
+                                                                <div class="input-group mg-b-pro-edt">
+                                                                    <div class="custom-file">
+                                                                        <input type="file" class="custom-file-input"
+                                                                            id="inputGroupFile04"
+                                                                            aria-describedby="inputGroupFileAddon04"
+                                                                            style="text-align: right; margin-bottom: 15px;">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!-- jawaban D -->
+                                                            <div class="input-group mg-b-pro-edt">
+                                                                <span class="input-group-addon">
+                                                                    D.
+                                                                </span>
+                                                                <input type="text" class="form-control">
+                                                            </div>
+                                                            <!-- Upload file -->
+                                                            <div class="col-lg-1">
+                                                                <label for=""></label>
+                                                            </div>
+                                                            <div class="col-lg-11">
+                                                                <div class="input-group mg-b-pro-edt">
+                                                                    <div class="custom-file">
+                                                                        <input type="file" class="custom-file-input"
+                                                                            id="inputGroupFile04"
+                                                                            aria-describedby="inputGroupFileAddon04"
+                                                                            style="text-align: right; margin-bottom: 15px;">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!-- kunci jawaban -->
+                                                            <div class="input-group mg-b-pro-edt">
+                                                                <span class="input-group-addon">
+                                                                    Kunci
+                                                                </span>
+                                                                <select name="select" class="form-control">
+                                                                    <option value=" opt1">--pilih--</option>
+                                                                    <option value="opt2">A</option>
+                                                                    <option value="opt3">B</option>
+                                                                    <option value="opt4">C</option>
+                                                                    <option value="opt5">D</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- TKP 35 Soal -->
+                                        <div class="row" style="margin-bottom: 20px;">
+                                            <div class="col-lg col-md col-sm col-xs-12">
+                                                <div class="review-content-section">
+                                                    <!-- tipe soal -->
+                                                    <div class="col-lg col-md col-sm col-xs"
+                                                        style="margin-bottom: 20px;">
+                                                        <label for="">Tipe Soal</label>
+                                                        <select name="select" class="form-control">
+                                                            <option value=" opt1">--pilih--</option>
+                                                            <option value="opt2">TWK</option>
+                                                            <option value="opt3">TIU</option>
+                                                            <option value="opt4">TKP</option>
+                                                        </select>
+                                                    </div>
+                                                    <!-- no. 1 -->
+                                                    <div class="row" style="margin-bottom: 100px;">
+                                                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                                                            <label for="">Id Soal</label>
+                                                            <div class="input-group mg-b-pro-edt">
+                                                                <input type="text" class="form-control"
+                                                                    placeholder="Id">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                                                            <label for="">bobot</label>
+                                                            <div class="input-group mg-b-pro-edt">
+                                                                <input type="text" class="form-control"
+                                                                    placeholder="contoh 2/soal">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                                                            <label for="">Timer</label>
+                                                            <div class="input-group mg-b-pro-edt">
+                                                                <input type="text" class="form-control"
+                                                                    placeholder="contoh 30">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                                                            <label for="">jmlh Soal</label>
+                                                            <div class="input-group mg-b-pro-edt">
+                                                                <input type="text" class="form-control"
+                                                                    placeholder="contoh 10">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xs-12 col-lg-6">
+                                                            <div class="col-lg-1">
+                                                                <label for="">1. </label>
+                                                            </div>
+                                                            <div class="col-lg-11">
+                                                                <div class="input-group mg-b-pro-edt">
+                                                                    <textarea class="form-control"
+                                                                        style="width: 480px; height: 300px;"></textarea>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-1">
+                                                                <label for=""> </label>
+                                                            </div>
+                                                            <div class="col-lg-11">
+                                                                <div class="input-group mg-b-pro-edt">
+                                                                    <div class="custom-file">
+                                                                        <label class="custom-file-label"
+                                                                            for="inputGroupFile04">Upload Images</label>
+                                                                        <input type="file" class="custom-file-input"
+                                                                            id="inputGroupFile04"
+                                                                            aria-describedby="inputGroupFileAddon04"
+                                                                            style="text-align: right; margin-bottom: 15px;">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- Jawaban A,B,C,D -->
+                                                        <!-- jawaban A -->
+                                                        <div class="col-xs-12 col-lg-6">
+                                                            <div class="input-group mg-b-pro-edt">
+                                                                <span class="input-group-addon">
+                                                                    A.
+                                                                </span>
+                                                                <input type="text" class="form-control">
+                                                            </div>
+                                                            <!-- Upload file -->
+                                                            <div class="col-lg-1">
+                                                                <label for=""></label>
+                                                            </div>
+                                                            <div class="col-lg-11">
+                                                                <div class="input-group mg-b-pro-edt">
+                                                                    <div class="custom-file">
+                                                                        <input type="file" class="custom-file-input"
+                                                                            id="inputGroupFile04"
+                                                                            aria-describedby="inputGroupFileAddon04"
+                                                                            style="text-align: right; margin-bottom: 15px;">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!-- jawaban B -->
+                                                            <div class="input-group mg-b-pro-edt">
+                                                                <span class="input-group-addon">
+                                                                    B.
+                                                                </span>
+                                                                <input type="text" class="form-control">
+                                                            </div>
+                                                            <!-- Upload file -->
+                                                            <div class="col-lg-1">
+                                                                <label for=""></label>
+                                                            </div>
+                                                            <div class="col-lg-11">
+                                                                <div class="input-group mg-b-pro-edt">
+                                                                    <div class="custom-file">
+                                                                        <input type="file" class="custom-file-input"
+                                                                            id="inputGroupFile04"
+                                                                            aria-describedby="inputGroupFileAddon04"
+                                                                            style="text-align: right; margin-bottom: 15px;">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!-- Jawaban C -->
+                                                            <div class="input-group mg-b-pro-edt">
+                                                                <span class="input-group-addon">
+                                                                    C.
+                                                                </span>
+                                                                <input type="text" class="form-control">
+                                                            </div>
+                                                            <!-- Upload file -->
+                                                            <div class="col-lg-1">
+                                                                <label for=""></label>
+                                                            </div>
+                                                            <div class="col-lg-11">
+                                                                <div class="input-group mg-b-pro-edt">
+                                                                    <div class="custom-file">
+                                                                        <input type="file" class="custom-file-input"
+                                                                            id="inputGroupFile04"
+                                                                            aria-describedby="inputGroupFileAddon04"
+                                                                            style="text-align: right; margin-bottom: 15px;">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!-- jawaban D -->
+                                                            <div class="input-group mg-b-pro-edt">
+                                                                <span class="input-group-addon">
+                                                                    D.
+                                                                </span>
+                                                                <input type="text" class="form-control">
+                                                            </div>
+                                                            <!-- Upload file -->
+                                                            <div class="col-lg-1">
+                                                                <label for=""></label>
+                                                            </div>
+                                                            <div class="col-lg-11">
+                                                                <div class="input-group mg-b-pro-edt">
+                                                                    <div class="custom-file">
+                                                                        <input type="file" class="custom-file-input"
+                                                                            id="inputGroupFile04"
+                                                                            aria-describedby="inputGroupFileAddon04"
+                                                                            style="text-align: right; margin-bottom: 15px;">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!-- kunci jawaban -->
+                                                            <div class="input-group mg-b-pro-edt">
+                                                                <span class="input-group-addon">
+                                                                    Kunci
+                                                                </span>
+                                                                <select name="select" class="form-control">
+                                                                    <option value=" opt1">--pilih--</option>
+                                                                    <option value="opt2">A</option>
+                                                                    <option value="opt3">B</option>
+                                                                    <option value="opt4">C</option>
+                                                                    <option value="opt5">D</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- no. 2 -->
+                                                    <div class="row">
+                                                        <div class="col-xs-12 col-lg-6">
+                                                            <div class="col-lg-1">
+                                                                <label for="">2. </label>
+                                                            </div>
+                                                            <div class="col-lg-11">
+                                                                <div class="input-group mg-b-pro-edt">
+                                                                    <textarea class="form-control"
+                                                                        style="width: 480px; height: 300px;"></textarea>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-1">
+                                                                <label for=""> </label>
+                                                            </div>
+                                                            <div class="col-lg-11">
+                                                                <div class="input-group mg-b-pro-edt">
+                                                                    <div class="custom-file">
+                                                                        <label class="custom-file-label"
+                                                                            for="inputGroupFile04">Upload Images</label>
+                                                                        <input type="file" class="custom-file-input"
+                                                                            id="inputGroupFile04"
+                                                                            aria-describedby="inputGroupFileAddon04"
+                                                                            style="text-align: right; margin-bottom: 15px;">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- Jawaban A,B,C,D -->
+                                                        <!-- jawaban A -->
+                                                        <div class="col-xs-12 col-lg-6">
+                                                            <div class="input-group mg-b-pro-edt">
+                                                                <span class="input-group-addon">
+                                                                    A.
+                                                                </span>
+                                                                <input type="text" class="form-control">
+                                                            </div>
+                                                            <!-- Upload file -->
+                                                            <div class="col-lg-1">
+                                                                <label for=""></label>
+                                                            </div>
+                                                            <div class="col-lg-11">
+                                                                <div class="input-group mg-b-pro-edt">
+                                                                    <div class="custom-file">
+                                                                        <input type="file" class="custom-file-input"
+                                                                            id="inputGroupFile04"
+                                                                            aria-describedby="inputGroupFileAddon04"
+                                                                            style="text-align: right; margin-bottom: 15px;">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!-- jawaban B -->
+                                                            <div class="input-group mg-b-pro-edt">
+                                                                <span class="input-group-addon">
+                                                                    B.
+                                                                </span>
+                                                                <input type="text" class="form-control">
+                                                            </div>
+                                                            <!-- Upload file -->
+                                                            <div class="col-lg-1">
+                                                                <label for=""></label>
+                                                            </div>
+                                                            <div class="col-lg-11">
+                                                                <div class="input-group mg-b-pro-edt">
+                                                                    <div class="custom-file">
+                                                                        <input type="file" class="custom-file-input"
+                                                                            id="inputGroupFile04"
+                                                                            aria-describedby="inputGroupFileAddon04"
+                                                                            style="text-align: right; margin-bottom: 15px;">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!-- Jawaban C -->
+                                                            <div class="input-group mg-b-pro-edt">
+                                                                <span class="input-group-addon">
+                                                                    C.
+                                                                </span>
+                                                                <input type="text" class="form-control">
+                                                            </div>
+                                                            <!-- Upload file -->
+                                                            <div class="col-lg-1">
+                                                                <label for=""></label>
+                                                            </div>
+                                                            <div class="col-lg-11">
+                                                                <div class="input-group mg-b-pro-edt">
+                                                                    <div class="custom-file">
+                                                                        <input type="file" class="custom-file-input"
+                                                                            id="inputGroupFile04"
+                                                                            aria-describedby="inputGroupFileAddon04"
+                                                                            style="text-align: right; margin-bottom: 15px;">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!-- jawaban D -->
+                                                            <div class="input-group mg-b-pro-edt">
+                                                                <span class="input-group-addon">
+                                                                    D.
+                                                                </span>
+                                                                <input type="text" class="form-control">
+                                                            </div>
+                                                            <!-- Upload file -->
+                                                            <div class="col-lg-1">
+                                                                <label for=""></label>
+                                                            </div>
+                                                            <div class="col-lg-11">
+                                                                <div class="input-group mg-b-pro-edt">
+                                                                    <div class="custom-file">
+                                                                        <input type="file" class="custom-file-input"
+                                                                            id="inputGroupFile04"
+                                                                            aria-describedby="inputGroupFileAddon04"
+                                                                            style="text-align: right; margin-bottom: 15px;">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!-- kunci jawaban -->
+                                                            <div class="input-group mg-b-pro-edt">
+                                                                <span class="input-group-addon">
+                                                                    Kunci
+                                                                </span>
+                                                                <select name="select" class="form-control">
+                                                                    <option value=" opt1">--pilih--</option>
+                                                                    <option value="opt2">A</option>
+                                                                    <option value="opt3">B</option>
+                                                                    <option value="opt4">C</option>
+                                                                    <option value="opt5">D</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Pembahasan -->
+                                        <div class="row">
+                                            <div class="col-lg-4 col-xs-12">
+                                                <div class="custom-file">
+                                                    <label class="custom-file-label" for="inputGroupFile04"
+                                                        style="font-size: 20px;">Upload
+                                                        Pembahasan</label>
+                                                    <input type="file" class="custom-file-input" id="inputGroupFile04"
+                                                        aria-describedby="inputGroupFileAddon04"
+                                                        style="text-align: right; margin-bottom: 15px;">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- button -->
                                         <div class="row" style="padding-bottom: 20px;">
                                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                                 <div class="text-center custom-pro-edt-ds">
-                                                    <button type="button" class="btn btn-success m-r-10">Add
-                                                    </button>
-                                                    <button type="button" class="btn btn-danger">Remove </button>
+                                                    <a href="list_soal_pembahasan.html" class="btn btn-success"
+                                                        style="margin-right: 100px;">
+                                                        <span>
+                                                            <i class="icon nalika-edit"></i> Add
+                                                        </span>
+                                                    </a>
+                                                    <a href="remove.html" class="btn btn-danger">
+                                                        <span>
+                                                            <i class="icon nalika-delete-button"></i> Remove
+                                                        </span>
+                                                    </a>
                                                 </div>
                                             </div>
                                         </div>
